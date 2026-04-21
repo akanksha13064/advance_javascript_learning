@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Example</title>
+</head>
+<body>
+
+<script>
+    // var example
+    var fname = "Akanksha"; // global scope
+    var fname = "Akshada";  // redeclare allowed
+    fname = "Shreesha";     // reassign allowed
+
+    console.log(fname);
+    document.write(fname + "<br>");
+
+    // let example
+    let lname = "Deshmukh";
+    // let lname = "Mali"; ❌ not allowed
+    lname = "Sanap"; // allowed
+
+    document.write(lname + "<br>");
+
+    // const example
+    const cname = "TCS";
+    // const cname = "Cognizant"; ❌ not allowed
+    // cname = "FCT"; ❌ not allowed
+
+    document.write(cname + "<br>");
+
+    // scope example
+    if (100 == 100) {
+        var y = "Hello";         // global scope
+        let x = "How are you";   // block scope
+        const z = "I am fine";   // block scope
+    }
+
+    console.log(y); // ✅ works
+    // console.log(x); ❌ error
+    // console.log(z); ❌ error
+
+</script>
+
+</body>
+</html>
