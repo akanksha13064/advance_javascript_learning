@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function (Reusable Code)</title>
+</head>
+<body>
+
+<script>
+    // old style function
+    function welcome(){
+        document.write("Its Akankshaa<br>");
+    }
+
+    welcome();
+    welcome();
+    welcome();
+
+    // arrow function
+    const welcome2 = () => document.write("Its Akankshaa <br>");
+    welcome2();
+</script>
+
+<script>
+    // function with parameter
+    let welcome3 = function(name){
+        return `Hello its ${name}`;
+    }
+    document.write(welcome3("Kaustubh") + "<br>");
+
+    // arrow function
+    let welcome4 = (name) => {
+        return `Hello its ${name}`;
+    }
+    document.write(welcome4("Shreesha") + "<br>");
+
+    console.log(typeof welcome4);
+</script>
+
+<script>
+    // normal function
+    function add(a,b){
+        return a + b;
+    }
+    console.log(add(20,30));
+
+    // arrow function
+    const addition = (num1,num2) => num1 + num2;
+    console.log(addition(120,130));
+</script>
+
+</body>
+</html>

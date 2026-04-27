@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Spread Operator</title>
+</head>
+<body>
+
+<script>
+    var obj1 = {
+        name: "Akanksha",
+        education: "BE IT",
+        email: "akankshamali233@gmail.com"
+    };
+
+    var obj2 = {
+        age: 21,
+        phone: 7820908605
+    };
+
+    // Merge objects using spread
+    var obj3 = {
+        ...obj1,
+        ...obj2
+    };
+
+    console.log(obj3);
+
+    // ❌ document.write(obj3); (not useful for objects)
+    
+    // ✅ Convert object to string
+    document.write(JSON.stringify(obj3));
+
+    // Pretty format
+    document.write(`<pre>${JSON.stringify(obj3, null, 4)}</pre>`);
+
+    // Show only selected keys
+    document.write(`<pre>${JSON.stringify(obj3, ["name", "age"], 4)}</pre>`);
+
+</script>
+
+</body>
+</html>

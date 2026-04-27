@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Array Object</title>
+</head>
+<body>
+
+<script>
+    const person = {
+        name: "Akanksha",
+        age: 21,
+        gender: "female"
+    };
+</script>
+
+<script>
+    const person1 = {
+        name: "shrisha",
+        age: 21,
+        gender: "female"
+    };
+
+    // ✅ correct destructuring with rename
+    let { name: name1, age: age1, gender: gender1 } = person1;
+
+    document.write(`My name is - ${name1}, my age ${age1}, Gender: ${gender1}<br>`);
+</script> 
+
+<script>
+    const student = {
+        uname: "Teju",
+        marks: {
+            math: 90,
+            science: 56
+        }
+    };
+
+    // ✅ correct nested destructuring
+    const { uname, marks: { math, science } } = student;
+
+    document.write(`My name is ${uname}, Science Marks: ${science}<br>`);
+</script>
+
+<script>
+    const arrValue = ['one', 'two', 'three'];
+
+    // ✅ correct variable name
+    const [x, y] = arrValue;
+
+    console.log(y); // two
+</script>
+
+<script>
+    function showInfo({ name, age, city }) {
+        document.write(`Name: ${name}, Age: ${age}, City: ${city}<br>`);
+    }
+
+    const person2 = {
+        name: "Nandini",
+        age: 21,
+        city: "Dharashiv"
+    };
+
+    showInfo(person2);
+</script>
+
+</body>
+</html>

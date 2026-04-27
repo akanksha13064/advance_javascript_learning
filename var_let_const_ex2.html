@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //var example
+
+        var fname = "Shrisha";  //globel scope
+        var fname = "Akanskha"  //redeclare  allow
+        fname = "Swara"; // reassign allow
+      
+      
+        console.log(fname); 
+        document.write(fname);
+
+        //let example
+ 
+        let lname = "Mali"
+        //let lname = "Dahiwadkar" ;  //cannot redeclare
+
+        lname = "Mane";  //reassign allowed
+        document.write(lname);
+        console.log(lname);
+
+      //const Example
+
+      const cname = "TCS";
+     // const cname = "Cognizant"; //redeclare not allow
+      // cname = "FCT";   //reassign not allowed
+
+      document.write(cname);
+      console.log(cname);  
+      
+//scope example
+
+if(10==10){
+    var y = "Hello";
+
+    let x = " How are u"
+
+
+}
+console.log(x);
+document.write(x);
+      
+    </script>
+</body>
+</html>
