@@ -1,0 +1,48 @@
+<script>
+class Person {
+    constructor(name, age) {
+        this.pname = name;
+        this.page = age;
+    }
+
+    showInfo() {
+        document.write(`My name is ${this.pname} and my age is ${this.page}<br>`);
+    }
+}
+
+// Student class
+class Student extends Person {
+    constructor(name, age, rollNo) {
+        super(name, age);
+        this.rollNo = rollNo;
+    }
+
+    showStudent() {
+        document.write(`Student Info: Name: ${this.pname}, Age: ${this.page}, Roll No: ${this.rollNo}<br>`);
+    }
+}
+
+// ✅ New Employee class
+class Employee extends Person {
+    constructor(name, age, empId, salary) {
+        super(name, age);
+        this.empId = empId;
+        this.salary = salary;
+    }
+
+    showEmployee() {
+        document.write(`Employee Info: Name: ${this.pname}, Age: ${this.page}, ID: ${this.empId}, Salary: ${this.salary}<br>`);
+    }
+}
+
+// objects
+const s1 = new Student("Gajanan", 21, 4004);
+const e1 = new Employee("Akanksha", 23, 101, 25000);
+
+// calling methods
+s1.showInfo();
+s1.showStudent();
+
+e1.showInfo();
+e1.showEmployee();
+</script>

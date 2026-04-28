@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Class Example</title>
+</head>
+<body>
+
+<script>
+    class Hello {
+        message() {
+            document.write("Hello its Akanksha<br>");
+        }
+
+        hello() {
+            document.write("Hello Shrisha<br>");
+        }
+    }
+
+    let a = new Hello();
+    a.message();
+    a.hello();
+</script>
+
+<script>
+    class Student {
+        constructor() {
+            document.write("Hello Varad<br>");
+        }
+
+        static staticMethod() {
+            document.write("Hello Its Static Method<br>");
+        }
+    }
+
+    let b = new Student();
+    Student.staticMethod(); // calling static method
+</script>
+
+<script>
+    class Person {
+        constructor(name, age) {
+            this.pname = name;
+            this.page = age;
+        }
+
+        display() {
+            document.write(`My name is ${this.pname} and my age is ${this.page}<br>`);
+        }
+    }
+
+    let a1 = new Person("Akanksha", 23);
+    let a2 = new Person("Varad", 23);
+
+    a1.display();
+    a2.display();
+</script>
+
+</body>
+</html>
