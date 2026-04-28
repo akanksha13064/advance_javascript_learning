@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Vehicle
+        {
+            constructor(brand,speed){
+                this.brand=brand;
+                this.speed=speed;
+            }
+            display()
+            {
+                document.write(`Brand : ${this.brand} ,  Speed : ${this.speed}` + "<br>");
+            }
+        }
+        class Car extends Vehicle
+        {
+            constructor(brand,speed,fuleType){
+                super(brand,speed);
+                this.fuleType=fuleType;
+            }
+            showDetails()
+            {
+                document.write(`Brand : ${this.brand} ,  Speed : ${this.speed} , FuleType : ${this.fuleType}` + "<br>");
+
+            }
+        }
+        class Bike extends Vehicle
+        {
+            constructor(brand,speed,type){
+                super(brand,speed);
+                this.type=type;
+            }
+            showType()
+            {
+                document.write(`Brand : ${this.brand} ,  Speed : ${this.speed} ,  Type : ${this.type}` + "<br>");
+            }
+        }
+        let a1 = new Vehicle("Honda",120);
+        let a2 = new Car ("TVS",100,"petrol");
+        let a3 = new Bike ("Yamaha",120,"Sports");
+
+        a1.display();
+        a2.showDetails();
+        a3.showType();
+    </script>
+</body>
+</html>
